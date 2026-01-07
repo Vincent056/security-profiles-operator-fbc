@@ -194,7 +194,8 @@ properties:
               },
               "spec": {
                 "architectures": [
-                  "SCMP_ARCH_X86_64"
+                  "SCMP_ARCH_X86_64",
+                  "SCMP_ARCH_PPC64LE"
                 ],
                 "defaultAction": "SCMP_ACT_LOG",
                 "syscalls": [
@@ -573,7 +574,8 @@ properties:
               },
               "spec": {
                 "architectures": [
-                  "SCMP_ARCH_X86_64"
+                  "SCMP_ARCH_X86_64",
+                  "SCMP_ARCH_PPC64LE"
                 ],
                 "defaultAction": "SCMP_ACT_LOG",
                 "syscalls": [
@@ -766,7 +768,8 @@ properties:
         - apparmor
         - ebpf
       labels:
-        operatorframework.io/arch.amd64: "true"
+        operatorframework.io/arch.amd64: supported
+        operatorframework.io/arch.ppc64le: supported
       links:
         - name: Security Profiles Operator
           url: https://github.com/openshift/security-profiles-operator
@@ -961,7 +964,8 @@ properties:
               },
               "spec": {
                 "architectures": [
-                  "SCMP_ARCH_X86_64"
+                  "SCMP_ARCH_X86_64",
+                  "SCMP_ARCH_PPC64LE"
                 ],
                 "defaultAction": "SCMP_ACT_LOG",
                 "syscalls": [
@@ -1155,6 +1159,7 @@ properties:
         - ebpf
       labels:
         operatorframework.io/arch.amd64: supported
+        operatorframework.io/arch.ppc64le: supported
       links:
         - name: Security Profiles Operator
           url: https://github.com/openshift/security-profiles-operator
@@ -1349,7 +1354,8 @@ properties:
               },
               "spec": {
                 "architectures": [
-                  "SCMP_ARCH_X86_64"
+                  "SCMP_ARCH_X86_64",
+                  "SCMP_ARCH_PPC64LE"
                 ],
                 "defaultAction": "SCMP_ACT_LOG",
                 "syscalls": [
@@ -1543,6 +1549,7 @@ properties:
         - ebpf
       labels:
         operatorframework.io/arch.amd64: supported
+        operatorframework.io/arch.ppc64le: supported
       links:
         - name: Security Profiles Operator
           url: https://github.com/openshift/security-profiles-operator
